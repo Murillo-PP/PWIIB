@@ -10,11 +10,13 @@
     <a href="index.php">Página inicial</a>
     <a href="contato.php">Página de contato</a>
     <h1>Lista de produtos</h1>
+    <ol>
     <?php
         for($i = 0; $i < 3; $i++)
         {
             echo "<li>Item $i</li>";
         }
     ?>
+    </ol>
 </body>
 </html>
