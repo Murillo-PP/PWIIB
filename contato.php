@@ -7,10 +7,11 @@
     <title>Entre em contato</title>
 </head>
 <body>
-    <a href="index.php">Página inicial</a>
+    <a href="index.php">Home</a>
+    <a href="contato.php">Página de contato</a>
     <a href="produtos.php">Lista de produtos</a>
     <?php
-        echo "<h1>Página de contato do site</h1>";
+        echo "<h1>Página de contato</h1>";
     ?>
 </body>
 </html>
