@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto PWII B</title>
-     <link rel="stylesheet" href="bootstrap.min.css"> 
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="#">
       <img src="img/green.png" alt="Green Lantern" width="30" height="30">
     </a>
+  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -48,12 +50,56 @@
     </div>
   </div>
 </nav>
+<div class="container">
+  <h1>While</h1>
+  <p>
+    While é uma estrutura de repetição. Existem 3 configurações para 
+    a estrutura de repetição funcionar:
+    <ol>
+      <li>Variável de controle</li>
+      <li>Condição de finalização</li>
+      <li>Incremento da variavel de controle</li>
+    </ol>
+    <pre>
+        $i = 0;
+        while($i < 10)
+        {
+          echo "indice $i";
+          $i = $i + 1;
+        }
+    </pre>
+    <?php
+      $i = 0;
+      while($i < 10)
+      {
+        echo "while com indice $i <br>";
+        $i = $i + 1;
+      }
+    ?>
+  </p>
+  <h2>Do While </h2>
 
+  <p>
+  A diferença do DO WHile para While é que no DO WHILE sempre vai haver pelo menos 
+  uma execução do bloco de código.
+  Você avalia a necessidade de qual estrutura de repetição é adequada.
+    <pre>
+        $i = 0;
+        do{
+          echo "while com indice $i <br>";
+          $i = $i + 1;
+        }while($i < 10)
+    </pre>
+  <?php
 
-<script src="bootstrap.bundle.min.js" ></script>
-<script src="bootstrap.min.css" ></script>
- <h1>while</h1>
-
-
+  $i = 0;
+        do{
+          echo "DO WHILE com indice $i <br>";
+          $i = $i + 1;
+        }while($i < 10)
+  ?>
+    </p>
+</div>   
+  <script src="bootstrap.bundle.min.js" ></script>
 </body>
 </html>

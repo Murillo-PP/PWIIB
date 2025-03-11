@@ -3,32 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto PWII B</title>
-     <link rel="stylesheet" href="bootstrap.min.css">
-
-<style>
-  
-   .row{
-     border: 2px solid red;
-     padding: 5px:
-   }
-
-    .row > div {
-      border: 2px solid yellow;
-      padding: 50px 0;
-      text-align: center
-    }
-
-</style>
-
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="estilo.css" rel="stylesheet" />
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+  <a class="navbar-brand" href="#">
       <img src="img/green.png" alt="Green Lantern" width="30" height="30">
     </a>
+  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -64,12 +50,30 @@
     </div>
   </div>
 </nav>
+<div class="container">
+  <h1>For</h1>
+  <p>
+    For é uma estrutura de repetição. Existem 3 configurações para 
+    a estrutura de repetição funcionar:
+    <ol>
+      <li>Variável de controle</li>
+      <li>Condição de finalização</li>
+      <li>Incremento da variavel de controle</li>
+    </ol>
+    <pre>
+        for($i = 0; $i < 10; $i++){
+          echo "indice $i";
+        }
+    </pre>
+    <?php
+      for($i = 0; $i < 10; $i++){
+        echo "indice $i <br/>";
+      }
+    ?>
+  </p>
+    </div>
 
 
-<script src="bootstrap.bundle.min.js" ></script>
-<script src="bootstrap.min.css" ></script>
- 
-<h1>for</h1>
-
+<script src="bootstrap.bundle.min.js"></script>
 </body>
 </html>

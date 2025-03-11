@@ -64,12 +64,96 @@
     </div>
   </div>
 </nav>
+<div class="container">
+  <h1>Array</h1>
+  <p>
+    São variavéis que podem guardar uma lista de valores indentificados por indice ou chave
+  </p>
+  <pre>
+    $frutas = ["Banana", "Maçã", "Abacaxi", "Mamão", 10, true, array(), [] ];
+    //ou
+    $frutas = array["Banana", "Maçã", "Abacaxi", "Mamão"];
+  </pre>
+  <?php          //0        1        2         3
+    $frutas = ["Banana", "Maçã", "Abacaxi", "Mamão" ];
+    echo "<br> $frutas[0]";
 
+    for($i =0; $i < count($frutas); $i++ )
+    {
+        echo "<br> $frutas[$i]";
+    }
 
+    array_push($frutas, "Limão", "Uva", "Jabuticaba");
+
+    for($i = 0; $i < count($frutas); $i++)
+    {
+      echo "<br> $frutas[$i]";
+    }
+
+    array_push($frutas, rand(1,75));
+
+    for($i = 0; $i < count($frutas); $i++)
+    {
+      echo "<br> $frutas[$i]";
+    }
+    
+    $b = array();
+    for ($p = 0; $p<5; $p++){
+      $b[$p] = rand(1,15);
+    }
+
+    $i = array();
+    for ($p = 0; $p<5; $p++){
+      $i[$p] = rand(16,30);
+    }
+
+    $n = array();
+    for ($p = 0; $p<5; $p++){
+      $n[$p] = rand(31,45);
+    }
+
+    $g = array();
+    for ($p = 0; $p<5; $p++){
+      $g[$p] = rand(46,60);
+    }
+
+    $o = array();
+    for ($p = 0; $p<5; $p++){
+      $o[$p] = rand(61,75);
+    }
+  ?>
+
+<style>
+  table, tr, td{
+    border: 10px solid;
+    font-size:50px;
+    padding:20px;
+  }
+</style>
+  <table border="6">
+    <tr>
+      <td>B</td>
+      <td>I</td>
+      <td>N</td>
+      <td>G</td>
+      <td>O</td>
+    </tr>
+    <?php
+      for($p=0; $p < 5; $p++)
+      {
+        echo "<tr>";
+        echo "<td>$b[$p]</td>";  
+        echo "<td>$i[$p]</td>";
+        echo "<td>$n[$p]</td>";
+        echo "<td>$g[$p]</td>";
+        echo "<td>$o[$p]</td>";
+        echo "</tr>";
+      }
+    ?>
+  </table>
+</div>
 <script src="bootstrap.bundle.min.js" ></script>
 <script src="bootstrap.min.css" ></script>
- 
-<h1>array</h1>
 
 </body>
 </html>
