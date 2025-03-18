@@ -5,16 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto PWII B</title>
-    <link href="bootstrap.min.css" rel="stylesheet" />
-    <link href="estilo.css" rel="stylesheet" />
+    <link href="bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
-  <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="#">
       <img src="img/green.png" alt="Green Lantern" width="30" height="30">
     </a>
-  </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -52,108 +50,22 @@
 </nav>
 
 <div class="container">
-  <h1>Array</h1>
-  <p>
-  São variaveis que podem guardar uma lista de valores 
-  identificados por indice ou chave.
-  </p>
-  <pre>
-    $frutas = ["banana", "Maçã" , "Abacaxi", "mamão", 10, true, array(), [] ];
-    //ou 
-    $frutas = array("banana", "Maçã" , "Abacaxi", "mamão");
-  </pre>
-  <?php           //0       1         2         3
-    $frutas = ["banana", "Maçã" , "Abacaxi", "mamão" ];
-    echo "<br>$frutas[2]";
+<h1>Cadastro de Usuário</h1>
 
-    for($i = 0; $i < count($frutas); $i++ )
-    {
-        echo "<br> $frutas[$i]";
-    }
+<form action="salvar_dados.php" method="post">
+    <label>Email</label>
+    <input name="login" type="email" value="">
+    <br />
+    <label>Senha</label>
+    <input name="senha" type="password" value="">
+    <br/>
+    <button type="submit">
+        Logar
+    </button>
+</form>
 
-    array_push($frutas,"Limão");
-
-    array_push($frutas, rand(1,75) );
-
-    for($i = 0; $i < count($frutas); $i++ )
-    {
-        echo "<br> $frutas[$i]";
-    }
-
-
-    $b = array( rand(1,15), rand(1,15), rand(1,15), rand(1,15), rand(1,15) );
-    
-    $i = [];
-    for($j = 0; $j<5; $j++){
-      $i[$j] = rand(16,30); 
-    }
-
-    $n = [];
-    for($j = 0; $j<5; $j++){
-      $n[$j] = rand(31,45); 
-    }
-
-    $g = array();
-    for($j = 0; $j<5; $j++){
-      $g[$j] = rand(46,60); 
-    }
-
-    $o = array();
-
-    for($j = 0; $j<5; $j++){
-      $o[$j] = rand(61,75); 
-    }
-  ?>
-
-
-
-
-  <style>
-    table, tr, td{
-      border: 10px solid;
-      font-size:50px;
-      padding:20px;
-    }
-
-    </style>
-
-
-  <table border="5">
-      <tr>
-        <td>B</td>
-        <td>I</td>
-        <td>N</td>
-        <td>G</td>
-        <td>O</td>
-      </tr>
-      <?php
-        for($ifor=0; $ifor < 5; $ifor++)
-        {
-          echo "<tr>";
-          echo "<td>$b[$ifor]</td>";  
-          echo "<td>$i[$ifor]</td>";
-          echo "<td>$n[$ifor]</td>";
-          echo "<td>$g[$ifor]</td>";
-          echo "<td>$o[$ifor]</td>";
-          echo "</tr>";
-        }
-      ?>
-
-  </table>
-
-  <h1>Sorteio</h1>
-  <?php
-
-  $Sorteio = array(12,7,3,9,5,2,4,1,11,8,13,6,14,15,10);
-
-  for ($i=0 ; $i < 15 ; $i++  ) 
-  { 
-      echo "<h2>Rodada ".($i+1)." número sorteado é : $Sorteio[$i]</h2>";
-  }
-
-
-  ?>
 </div>
-<script src="bootstrap.bundle.min.js"></script>
+
+<script src="bootstrap.bundle.min.js" ></script>
 </body>
 </html>
