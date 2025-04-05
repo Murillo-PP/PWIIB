@@ -1,6 +1,6 @@
 <?php
-if(isset($_POST["email"]) && empty($_POST["email"]) == false){
-    echo "O email é:".$_POST["email"];
+if(isset($_POST["login"]) && empty($_POST["login"]) == false){
+    echo "O login é:".$_POST["login"];
 }else{
     echo "Email não existe";
 }

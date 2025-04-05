@@ -1,20 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto PWII B</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
 </head>
-<style>
-            #formulario {
-                background-color: orange;
-                color: blue;
-                margin-top: 10px;
-                text-align: center;
-            }
-        </style>
 <body>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
@@ -56,30 +47,8 @@
     </div>
   </div>
 </nav>
-
-
-<div id ="formulario" class="container">
-      <div class="row">
-      <div class="col-4 offset-4">
-    <img src="img/def_civil.png" alt="Defesa Civil" width="450" height="300">
-    <form action="verificar_login.php" method="post">
-        <br />Digite o login:
-        <input type="text" class="form-control" name="login" />
-        <br />Digite a senha:
-        <input type="password" class="form-control" name="senha" />
-        <?php 
-        if (isset($_GET["erro"]) && empty($_GET["erro"])){
-            echo $_GET['erro'];
-        }
-        ?>
-        <br />
-        <div class="col-4 offset-4">
-        <button type="submit">
-            Logar
-        </button>
-        </div>
-    </form>
-</div>
   <script src="bootstrap.bundle.min.js" ></script>
+</body>
+</html>
 </body>
 </html>
