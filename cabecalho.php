@@ -18,25 +18,6 @@
             margin-left: auto;
             margin-right: auto;
       }
-      img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-      }
-
-      button {
-          width: 100%;
-      }
-        .row{
-            border: 2px;
-            padding: 5px:
-   }
-
-        .row > div {
-            border: 2px;
-            padding: 50px 0;
-            text-align: center
-    }
     </style>
 
 </head>
@@ -83,3 +64,5 @@
     </div>
   </div>
 </nav>
+<div class="container">
+  
