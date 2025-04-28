@@ -18,6 +18,30 @@
             margin-left: auto;
             margin-right: auto;
       }
+
+      .btn-color {
+              background-color: #0e1c36;
+              color: #fff;
+          }
+
+      .profile-image-pic {
+              height: 200px;
+              width: 200px;
+              object-fit: cover;
+          }
+
+      body {
+              background-color: #F0F0F0;
+          }
+
+      .cardbody-color {
+              /*background-color: #ebf2fa;*/
+              background-color: #17458F;
+          }
+
+      a {
+              text-decoration: none;
+          }
     </style>
 
 </head>
@@ -36,31 +60,34 @@
           <a class="nav-link active" aria-current="page" href="index.php">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="https://store.steampowered.com/" > Acesse a Steam por aqui </a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             PHP
           </a>
           <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="variavel.php">Variavel</a></li>
+            <li><a class="dropdown-item" href="professores.php">Professores</a></li>
             <li><a class="dropdown-item" href="if.php">if</a></li>
             <li><a class="dropdown-item" href="while.php">While</a></li>
             <li><a class="dropdown-item" href="for.php">for</a></li>
             <li><a class="dropdown-item" href="array.php">array/vetor</a></li>
             <li><a class="dropdown-item" href="switch.php">switch</a></li>
             <li><a class="dropdown-item" href="login.php">Login</a></li>
-            <li><a class="dropdown-item" href="Usuarios.php">Usuarios</a></li>
           </ul>
-        </li>
+        </li><!--Fim do menu dropdonw -->
         <li class="nav-item">
-          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            <a class="nav-link" href="instalar.php" > 
+              Instalar o banco 
+            </a>
         </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+        <li class="nav-item">
+            <a class="nav-link" href="usuarios.php" > 
+              Usuarios
+            </a>
+        </li>
+      </ul><!--Fim do menu  -->
     </div>
   </div>
 </nav>
