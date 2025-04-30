@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <table class="table table-striped">
+                    <table class="table table-striped table-hover">
                         <thead>
                             <tr>
                                 <th>Id</th>
@@ -47,16 +47,16 @@
                                 <th>Ativo</th>
                                 <th>
                                     <?php
-                                            //Foreach serve para ler todos os usuários
-                                            //vindos do banco em formato de array chave valor
-                                            foreach($usuarios as $item){
-                                                echo "<tr>
-                                                        <td>$item[ID]</td>
-                                                        <td>$item[LOGIN]</td>
-                                                        <td>$item[ATIVO]</td>
-                                                        <td></td>
-                                                    </tr>";
-                                            }
+                                        //Foreach serve para ler todos os usuários
+                                        //vindos do banco em formato de array chave valor
+                                        foreach($usuarios as $item){
+                                            echo "<tr>
+                                                    <td>$item[ID]</td>
+                                                    <td>$item[LOGIN]</td>
+                                                    <td>$item[ATIVO]</td>
+                                                    <td></td>
+                                                </tr>";
+                                        }
                                     ?>
                                 </th>
                             </tr>
