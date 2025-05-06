@@ -51,10 +51,12 @@
                                         //vindos do banco em formato de array chave valor
                                         foreach($usuarios as $item){
                                             echo "<tr>
-                                                    <td>$item[ID]</td>
-                                                    <td>$item[LOGIN]</td>
-                                                    <td>$item[ATIVO]</td>
-                                                    <td></td>
+                                                    <td>".$item['ID']."</td>
+                                                    <td>".$item['LOGIN']."</td>
+                                                    <td>".$item['ATIVO']."</td>
+                                                    <td>
+                                                        <a class='btn btn-danger' href='excluir_usuario.php?id=".$item['ID']."'>Excluir</a>
+                                                    </td>
                                                 </tr>";
                                         }
                                     ?>
