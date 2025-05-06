@@ -56,9 +56,10 @@
                                                     <td>".$item['ATIVO']."</td>
                                                     <td>
                                                         <a class='btn btn-danger' href='excluir_usuario.php?id=".$item['ID']."'>Excluir</a>
+                                                        <a class='btn btn-warning' href='editar_usuario.php?id=".$item['ID']."'>Editar</a>
                                                     </td>
                                                 </tr>";
-                                        }
+                                            }
                                     ?>
                                 </th>
                             </tr>
