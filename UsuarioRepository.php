@@ -17,6 +17,16 @@ class UsuarioRepository{
         return $usuarios;
     }
 
+    public function Pesquisar($busca){
+        $sql = "SELECT * from usuarios where LOGIN like '%$busca%' ";
+        $resultado = $this->conexao->query($sql);
+        $usuarios = [];
+        while ($row = $resultado->fetch_assoc()){
+            array_push($usuarios, $row);
+        }
+        return $usuarios;
+    }
+
     public function buscarPorId($id){
         $stmt = $this->conexao->prepare("SELECT * FROM usuarios WHERE id = ?");
         $stmt->bind_param("i", $id);
