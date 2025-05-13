@@ -33,6 +33,14 @@ class UsuarioRepository{
         $stmt->execute();
     }
 
+    public function Editar($login, $id, $ativo)
+    {
+        $sql = "UPDATE usuarios set LOGIN = ?, ATIVO = ? where ID = ?";
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bind_param("sii", $login,$ativo,$id);
+        $stmt->execute();
+    }
+
     public function excluirUsuario($id){
         $sql = "DELETE FROM usuarios WHERE id = ?";
         $preparar = $this->conexao->prepare($sql);
