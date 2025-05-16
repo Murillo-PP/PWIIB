@@ -38,6 +38,10 @@ else
                             }
                         ?>
                     </select>
+                    <br />
+                    <button class="btn btn-primary" type="submit">
+                            Salvar Usuário
+                    </button>
                 </form>
             </div>
         </div>
