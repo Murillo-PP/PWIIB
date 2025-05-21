@@ -87,6 +87,12 @@
               Usuarios
             </a>
         </li>
+
+        <li class="nav-item">
+            <a class="nav-link" href="disciplinas.php" > 
+              disciplinas
+            </a>
+        </li>
       </ul><!--Fim do menu  -->
     </div>
   </div>
