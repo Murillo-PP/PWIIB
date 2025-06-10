@@ -76,6 +76,18 @@
             <li><a class="dropdown-item" href="login.php">Login</a></li>
           </ul>
         </li><!--Fim do menu dropdonw -->
+        <?php
+        if (basename($_SERVER['PHP_SELF']) != 'login.php') {
+          ?>
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                  <li class="nav-item text-white">
+                      Bem vindo <?php echo $_SESSION["Nome"]; ?> <a href="logoff.php"> Faça o logoff aqui </a>
+                  </li>
+          </ul>
+
+          <?php
+        }
+        ?>
         <li class="nav-item">
             <a class="nav-link" href="instalar.php" > 
               Instalar o banco 
