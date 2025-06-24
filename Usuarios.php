@@ -2,25 +2,20 @@
     include "cabecalho.php";
     include "conexao.php";
 
-    //Inclui o arquivo da classe Repository do usuário
     require_once "UsuarioRepository.php";
 
-    //Crio um objeto do tipo UsuarioRepository chamado repo
-    //E recebe a conexão como parametro
     $repo = new UsuarioRepository($conexao);
 
     if(isset($_GET['busca']) && !empty($_GET['busca'])){
         $usuarios = $repo->Pesquisar($_GET['busca']);
     }else{
-        //Chamei o metodo BuscarTodos para puxar
-        //todos os usuários do banco de dados
         $usuarios = $repo->buscarTodos();
     }
     
 ?>
 
 <div class="row">
-    <div classe="col-12">
+    <div class="col-12">
         <div class="card">
             <br>
             <div class="card-header">

@@ -1,24 +1,36 @@
-<?php include "cabecalho.php"; ?>
-    <div id ="formulario" class="container">
-      <div class="row">
-      <div class="col-6 offset-3">
-    <img src="img/def_civil.png" alt="Defesa Civil" width="450" height="300">
-    <form action="verificar_login.php" method="post">
-        <br />Digite o login:
-        <input type="text" class="form-control" name="login" />
-        <br />Digite a senha:
-        <input type="password" class="form-control" name="senha" />
-        <?php 
-        if (isset($_GET["erro"]) && empty($_GET["erro"])){
-            echo $_GET['erro'];
-        }
-        ?>
-        <br />
-        <div class="col-4 offset-4">
-        <button type="submit">
-            Logar
-        </button>
-        </div>
-    </form>
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="login.css">
+  
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="autenticar.php" method="POST">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" name="login" required>
+
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="senha" required>
+
+            <button type="submit">Entrar</button>
+            <br>
+            <?php 
+                if(isset($_GET["erro"]) && !empty($_GET["erro"]))
+                {
+                    echo "<div class='alert alert-danger'>";
+                    echo $_GET["erro"];
+                    echo "</div>";
+                }
+
+            ?>
+        </form>
     </div>
-<?php include "rodape.php"; ?>
+</body>
+</html>
