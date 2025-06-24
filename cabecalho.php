@@ -1,15 +1,12 @@
-<script src="bootstrap.bundle.min.js"></script>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<script src="bootstrap.bundle.min.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Página inicial do site</title>
   <link href="bootstrap.min.css" rel="stylesheet" />
 </head>
 <body>
-<script src="bootstrap.bundle.min.js"></script>
 <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Aula PWII</a>
@@ -30,20 +27,20 @@
 
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Paginas
+            Páginas
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="if.php">If</a></li>
             <li><a class="dropdown-item" href="while.php">While</a></li>
             <li><a class="dropdown-item" href="for.php">For</a></li>
             <li><a class="dropdown-item" href="array.php">Array</a></li>
-            <li><a class="dropdown-item" href="variavel.php">Variavel</a></li>
+            <li><a class="dropdown-item" href="variavel.php">Variável</a></li>
             <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="disciplina.php">Disciplinas</a></li>
-            <li><a class="dropdown-item" href="referencias.php">Referencias</a></li>
-            <li><a class="dropdown-item" href="Usuarios.php">Usuarios</a></li>
+            <li><a class="dropdown-item" href="disciplinas.php">Disciplinas</a></li>
+            <li><a class="dropdown-item" href="referencias.php">Referências</a></li>
+            <li><a class="dropdown-item" href="Usuarios.php">Usuários</a></li>
             <li><hr class="dropdown-divider" /></li>
-            <li><a class="dropdown-item" href="conexao.php">Criar Banco</a></li>
+            <li><a class="dropdown-item" href="instalar.php">Criar Banco</a></li>
           </ul>
         </li>
       </ul>
@@ -54,7 +51,3 @@
     </div>
   </div>
 </nav>
-
-<script src="bootstrap.bundle.min.js"></script>
-</body>
-</html>

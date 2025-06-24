@@ -1,6 +1,4 @@
-<?php
-include "cabecalho.php";
-?>
+<?php include "cabecalho.php"; ?>
 
 <div class="row">
     <div class="col-4 offset-4">

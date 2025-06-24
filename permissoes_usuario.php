@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "cabecalho.php";
 include "conexao.php";
 
@@ -59,5 +59,4 @@ if ($result->num_rows > 0) {
 echo "</tbody></table>";
 
 $conexao->close();
-
 ?>

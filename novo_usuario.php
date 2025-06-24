@@ -1,7 +1,8 @@
 <?php   
-    include "cabecalho.php";
-    include "conexao.php";
+include "cabecalho.php";
+include "conexao.php";
 ?>
+
 <div class="row">
     <div class="col-4 offset-4">
         <form action="salvar_usuario.php" method="post">
@@ -22,6 +23,5 @@
         </form>
     </div>
 </div>
-
 
 <?php include "rodape.php"; ?>

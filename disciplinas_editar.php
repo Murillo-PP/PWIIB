@@ -6,8 +6,13 @@ require_once "disciplinaRepository.php";
 if (isset($_GET['id']) && !empty($_GET['id'])) {
     $repo = new DisciplinaRepository($conexao);
     $disciplina = $repo->buscarPorId($_GET['id']);
+    if (!$disciplina) {
+        header("location: disciplinas.php");
+        exit;
+    }
 } else {
     header("location: disciplinas.php");
+    exit;
 }
 ?>
 
